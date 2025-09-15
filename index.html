@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIAgentGov Zeeland</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography,forms"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+      /* Custom styles for citation links and smooth scrolling */
+      sup .citation-link { font-size: 0.85em; line-height: 1; text-decoration: none; color: #4f46e5; font-weight: 600; padding: 2px 3px; border-radius: 3px; transition: background-color 0.2s ease-in-out; }
+      sup .citation-link:hover { background-color: #e0e7ff; color: #3730a3; }
+      html { scroll-behavior: smooth; }
+      
+      /* Custom styles for Markdown tables */
+      .prose table { width: 100%; border-collapse: collapse; margin-top: 1.25em; margin-bottom: 1.25em; font-size: 0.875rem; line-height: 1.25rem; box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); border-radius: 0.5rem; overflow: hidden; border: 1px solid #e5e7eb; }
+      .prose thead { background-color: #f9fafb; border-bottom: 1px solid #e5e7eb; }
+      .prose th { font-weight: 600; padding: 0.75rem 1rem; text-align: left; vertical-align: middle; color: #374151; }
+      .prose tbody tr { border-bottom: 1px solid #e5e7eb; }
+      .prose tbody tr:last-child { border-bottom: none; }
+      .prose td { padding: 0.75rem 1rem; vertical-align: top; color: #4b5563; }
+      .prose tbody tr:nth-child(even) { background-color: #f9fafb; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "jspdf": "https://esm.sh/jspdf@^2.5.1",
+    "html2canvas": "https://esm.sh/html2canvas@^1.4.1",
+    "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+    "react/": "https://esm.sh/react@18.2.0/",
+    "@googlemaps/js-api-loader": "https://aistudiocdn.com/@googlemaps/js-api-loader@^1.16.10"
+  }
+}
+</script>
+</head>
+  <body class="antialiased font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
